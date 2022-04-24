@@ -4,7 +4,7 @@
 }
 
 .top-navbar {
-    background-color: black;
+    background-color: #121212;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -39,14 +39,19 @@
     padding: 1em;
 }
 
+.threedim-model {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
 
 
 @keyframes animatedBackground {
-    from {
-        background-position: 0 0;
+    0% {
+        background-position: left;
     }
-    to {
-        background-position: 100% 0;
+    100% {
+        background-position: right;
     }
 }
 
@@ -55,21 +60,22 @@
     padding-top: 15em;
     text-align: left;
     background: linear-gradient(0.35turn, #11584D, #764E3C, #8B690D);
+    background-size: 300%;
     height: 10em;
-    background: #121212;
-    background-image: url("images/test_anim.svg");
-    animation: animatedBackground 3s linear infinite;
+    /* background: #121212;
+    background-image: url("images/test_anim.svg"); */
+    animation: animatedBackground 20s linear infinite alternate;
 }
 
 .big-name {
     font-family: "Prata";
-    color: white;
+    color: #f0f0f0;
     font-size: 4em;
 }
 
 .big-title {
     font-family: "Prata";
-    color: white;
+    color: #f0f0f0;
 }
 
 .cards {
@@ -82,21 +88,21 @@
 }
 
 .project-card {
-    background: white;
+    background: #f0f0f0;
     width: 98%;
     height: 200px;
     text-align: center;
     margin: 1%;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 10%);
-    color: white;
+    color: #f0f0f0;
+    transition: all 0.2s ease-in-out;
 }
 
 .project-card:hover {
     background-color: rgba(255, 255, 255, 50%);
-    background: radial-gradient(#ffffff, #d0d0d0);
-    color: black;
-    transition: 1s;
+    color: #121212;
+    transform: rotate3d(1, 1, 1, 15deg);
 }
 
 @media (min-width: 1000px) {
@@ -129,9 +135,9 @@ li {
     display: inline;
     text-align: center;
     vertical-align: bottom;
-    color: white;
+    color: #f0f0f0;
 }
 
 a {
-    color: white;
+    color: #f0f0f0;
 }

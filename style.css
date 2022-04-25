@@ -4,7 +4,7 @@
 }
 
 .top-navbar {
-    background-color: #121212;
+    background: #121212f2;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -67,6 +67,18 @@
     animation: animatedBackground 20s linear infinite alternate;
 }
 
+.about-card {
+    padding: 2em;
+    padding-top: 15em;
+    text-align: left;
+    background: linear-gradient(0.35turn, #11584D, #764E3C, #8B690D);
+    background-size: 300%;
+    height: 10em;
+    background-image: url("images/DSC02058-min.png");
+    background-size: cover;
+    background-position: 50%;
+}
+
 .big-name {
     font-family: "Prata";
     color: #f0f0f0;
@@ -123,8 +135,21 @@
     position: relative;
 }
 
-.gallery-image {
-    width: 100%;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+.image-vertical {
+    width: 30.76923%;
+}
+
+.image-horizontal {
+    width: 69.23076%;
 }
 
 body {
@@ -140,4 +165,9 @@ li {
 
 a {
     color: #f0f0f0;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
 }
